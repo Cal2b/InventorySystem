@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="author" content="Caleb Koech">
+   <title>Alumni Login Page</title>
+  </head>
+   <body style="background-color:green;">
+   <style>
+   @keyframes longisa{
+     from{background-color: green;}
+     to{background-color: yellow;}
+   }
+   img{
+     border:3px outset yellow;
+     box-shadow: 8px 8px 8px white;
+     position: relative;
+     top:2px;
+     left:200px;
+   }
+   p {
+     border:2px outset red;
+     background-color: lightblue;
+     text-align: center;
+   }
+  body{
+    background-image: url("C:\Users\admin\Pictures\IMG-20211203-WA0001.jpg");
+  }
+  button{
+      background-color:brown;
+      color:blue;
+      padding: 14px 20px;
+      margin:8px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+  }
+  .imgcontainer{
+      text-align: center;
+      margin: 24px 0 12px 0;
+
+  }
+ </style>
+
+   <h1> Longisa High School Alumni Login Page</h1>
+     <form action="action_page.php" method="POST">
+         <div class="imgcontainer">
+             <img src="Longisa_High_School.jpg" alt="School Logo" class="School">
+         </div>
+         <div class="container">
+             <label for="uname">
+                 <b>Username</b>
+             </label>
+             <input type="text" placeholder="Enter your username here" name="uname" required>
+             <label for="psw">
+             <b>Password</b></label>
+               <input type="password" placeholder="Input password" name="psw" required>
+               <button type="submit">Login</button>
+               <label>
+                   <input type="checkbox" checked="checked" name="remember">Remember me</label>
+         </div>
+         <div class="container" style="background-color:green">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot<a href="#">password?</a></span>
+        </div>
+     </form>   
+
+   </body>
+</html>
